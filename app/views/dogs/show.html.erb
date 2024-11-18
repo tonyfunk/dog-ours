@@ -22,7 +22,7 @@
       <% end %>
       <% if policy(@dog).destroy? %>
       <div>
-        <%= link_to dog_path(@dog), data: {turbo_method: :delete, turbo_confirm: "Are you sure ?"}, class: "btn btn-secondary" do %>
+        <%= link_to dog_path(@dog), data: {turbo_method: :delete, turbo_confirm: "Are you sure to destroy ?"}, class: "btn btn-secondary" do %>
         <i class="fas fa-trash-alt"></i>
         <% end %>
       </div>
