@@ -106,7 +106,7 @@ file = URI.open("https://ca.slack-edge.com/T02NE0241-U06DZJW1W68-82c2aa6b1622-51
 user7.photo.attach(io: file, filename: "user.jpg", content_type: "image/jpeg")
 
 dog7 = Dog.create!(name: "Bretzel", description: "She has so much energy!", birth_date: Date.new(2018, 07, 18), constraint: "None: she is very kind tolerant", fun_fact: "She loves cats!", size: "Medium", breed: Breed.find_by_content!("BEAGLE HARRIER"), user_id: user7.id)
-file = URI.open("https://www.kingpet.fr/ph/u/766721643537408/6401019845823116/be3bff0c84db51867cdc5a58996262031.jpg?align=54,43&v=31&fm=webp&w=1080&h=810&q=35")
+file = URI.open("https://lemagduchien.ouest-france.fr/images/dossiers/2018-10/kangal-1-134823.jpg")
 dog7.photo.attach(io: file, filename: "dog.webp", content_type: "image/webp")
 
 Walk.create!(name: "B. Vincennes ", starting_point: "26 Rue du Rendez-Vous, 75012, Paris, France", duration: "1 h", start_time: DateTime.new(2024,03,18,19,0), difficulty: "Medium", description: "A walk around the lac Daumesnil" , frequency: "Once",number_of_participant: "1", user_id: user7.id)
